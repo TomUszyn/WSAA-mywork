@@ -48,7 +48,7 @@ class BookDAO:
     def findByID(self, id):
         cursor = self.getcursor()
         sql="select * from book where id = %s"
-        values = (id,)
+        values = (id,date)
 
         cursor.execute(sql, values)
         result = cursor.fetchone()

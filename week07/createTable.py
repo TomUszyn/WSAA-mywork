@@ -9,7 +9,7 @@ connection = mysql.connector.connect(
 )
 
 mycursor = connection.cursor()
-sql = "CREATE TABLE students (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT)"
+sql = "CREATE TABLE student (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT, course VARCHAR(255))"
 mycursor.execute(sql)
 
 mycursor.close()
